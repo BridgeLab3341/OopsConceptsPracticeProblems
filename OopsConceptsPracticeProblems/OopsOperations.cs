@@ -130,4 +130,20 @@ namespace OopsConceptsPracticeProblems
             set { balance = value; }
         }
     }
+    // Abstraction Concepts
+    abstract class GamePlay
+    {
+        public abstract void Play();
+        public virtual void Player()
+        {
+            Console.WriteLine("Sachin");
+        }
+    }
+     class Cricket : GamePlay
+    {
+        public override void Play()
+        {
+            Console.WriteLine("Who is Popular in Cricket Game");
+        }
+    }
 }
