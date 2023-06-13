@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choos Option To Perform\n1.Object and Class Example\n2.Single Inheritance\n3.Multi-Level Inheritance\n4.Hierarchical Inheritance\n5.Exit");
+                Console.WriteLine("Choos Option To Perform\n1.Object and Class Example\n2.Single Inheritance\n3.Multi-Level Inheritance\n4.Hierarchical Inheritance\n5.Polymorphism\n6.Exit");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -34,6 +34,17 @@
                         penguin.Swim();
                         break;
                         case 5:
+                        PolymorphismDemo poly= new PolymorphismDemo();
+                        poly.Add(3, 4);
+                        poly.Add(4, 5,5);
+                        Cat cat= new Cat();
+                        Pig pig= new Pig();
+                        Animals animals= new Animals();
+                        animals.AnimalSound();
+                        pig.AnimalSound();
+                        cat.AnimalSound();                       
+                        break;
+                        case 6:
                         flag = false;
                         break;
                 }

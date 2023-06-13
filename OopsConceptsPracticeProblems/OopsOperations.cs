@@ -71,4 +71,42 @@ namespace OopsConceptsPracticeProblems
             Console.WriteLine("Penguin is swimming");
         }
     }
+    // Polymorphism (Method overloading)
+    public class PolymorphismDemo
+    {
+        public void Add(int a, int b)
+        {
+            Console.WriteLine("Method Overloading");
+            Console.WriteLine("==================");
+            Console.WriteLine(a+b);
+        }
+        public void Add(int a, int b, int c)
+        {
+            Console.WriteLine(a+b+c);
+        }
+    }
+    //Polymorphism (Method Overridding)
+    public class Animals  
+    {
+        public virtual void AnimalSound()
+        {
+            Console.WriteLine("Method Overridding");
+            Console.WriteLine("===================");
+            Console.WriteLine("Animal Makes Sound");
+        }
+    }
+    public class Pig:Animals
+    {
+        public override void AnimalSound()
+        {
+            Console.WriteLine("The Pig say's wee wee");
+        }
+    }
+    public class Cat:Animals
+    {
+        public override void AnimalSound()
+        {
+            Console.WriteLine("The Cat Sound Mew Mew");
+        }
+    }
 }
