@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace OopsConceptsPracticeProblems
@@ -107,6 +109,25 @@ namespace OopsConceptsPracticeProblems
         public override void AnimalSound()
         {
             Console.WriteLine("The Cat Sound Mew Mew");
+        }
+    }
+    //Encapsulation
+    public class Person
+    {
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+    }
+    public class CheckBalance
+    {
+        public int balance;
+        public int MyBalance
+        {
+            get { return balance; }
+            set { balance = value; }
         }
     }
 }

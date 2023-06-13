@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choos Option To Perform\n1.Object and Class Example\n2.Single Inheritance\n3.Multi-Level Inheritance\n4.Hierarchical Inheritance\n5.Polymorphism\n6.Exit");
+                Console.WriteLine("Choos Option To Perform\n1.Object and Class Example\n2.Single Inheritance\n3.Multi-Level Inheritance\n4.Hierarchical Inheritance\n5.Polymorphism\n6.Encapsulation\n7.Exit");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -45,6 +45,16 @@
                         cat.AnimalSound();                       
                         break;
                         case 6:
+                        Person person= new Person();
+                        person.Name = "Somu";
+                        Console.WriteLine("Encapsulation");
+                        Console.WriteLine("=============");
+                        Console.WriteLine(person.Name);
+                        CheckBalance checkBalance = new CheckBalance();
+                        checkBalance.MyBalance = 10000;
+                        Console.WriteLine(checkBalance.MyBalance);
+                        break;
+                        case 7:
                         flag = false;
                         break;
                 }
