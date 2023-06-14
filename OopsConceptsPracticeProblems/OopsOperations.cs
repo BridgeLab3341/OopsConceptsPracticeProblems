@@ -203,4 +203,29 @@ namespace OopsConceptsPracticeProblems
             Console.WriteLine("Value: " + readValue);
         }
     }
+    public class TypesOfMethodsDemo
+    {
+        // Static method with a return type
+       public static int AddNumbers(int a, int b)
+        {
+            int sum = a + b;
+            return sum;
+        }
+        // Static method without a return type
+       public static void PrintMessage()
+        {
+            Console.WriteLine("Hello, World!");
+        }
+        // Instance method with a return type
+       public int MultiplyNumbers(int a, int b)
+        {
+            int sum = a * b;
+            return sum;
+        }
+        // Instance method without a return type
+       public void PrintResult(int result)
+        {
+            Console.WriteLine("Result: " + result);
+        }
+    }
 }
