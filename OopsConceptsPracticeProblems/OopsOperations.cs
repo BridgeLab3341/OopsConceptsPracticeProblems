@@ -131,6 +131,14 @@ namespace OopsConceptsPracticeProblems
         }
     }
     // Abstraction Concepts
+    abstract class AnimalDemo
+    {
+        public abstract void animalSound();
+        public void sleep()
+        {
+            Console.WriteLine("Zzz");
+        }
+    }
     abstract class GamePlay
     {
         public abstract void Play();
@@ -144,6 +152,55 @@ namespace OopsConceptsPracticeProblems
         public override void Play()
         {
             Console.WriteLine("Who is Popular in Cricket Game");
+        }
+    }
+    //Types of Variables(Local Variable)
+    public class StudentDeatails
+    {
+        public void StudentAge()
+        {
+            int age = 0;
+            age = age + 10;
+            Console.WriteLine("Student Age is : "+age);
+        }
+    }
+    //Non-Static Variables
+    public class EmployeeAge
+    {
+        int age;
+       public void Age(int newAge)
+        {
+            age=newAge;
+        }
+       public void PrintAge()
+        {
+            Console.WriteLine("Employee Age : "+age);
+        }
+    }
+    //Static Variable
+    public class Employee
+    {
+        static int count = 0;   
+       public static void Details()
+        {
+            count++;
+        }
+       public static void PrintCount()
+        {
+            Console.WriteLine("Employee Count: " + count);
+        }
+    }
+    //Read-only Variable
+    public class ReadOnlyDemo
+    {
+        readonly double readValue;
+        public ReadOnlyDemo()
+        {
+            readValue = 10000;
+        }
+        public void PrintValue()
+        {
+            Console.WriteLine("Value: " + readValue);
         }
     }
 }

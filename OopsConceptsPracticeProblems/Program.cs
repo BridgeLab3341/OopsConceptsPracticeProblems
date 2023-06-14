@@ -8,7 +8,7 @@
             while (flag)
             {
                 Console.WriteLine("Choos Option To Perform\n1.Object and Class Example\n2.Single Inheritance\n3.Multi-Level Inheritance" +
-                    "\n4.Hierarchical Inheritance\n5.Polymorphism\n6.Encapsulation\n7.Abstraction\n8.Exit");
+                    "\n4.Hierarchical Inheritance\n5.Polymorphism\n6.Encapsulation\n7.Abstraction\n8.Types of Variables\n9.Exit");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -61,6 +61,17 @@
                         cricket.Player();
                         break;
                         case 8:
+                        StudentDeatails deatails= new StudentDeatails();
+                        deatails.StudentAge();
+                        EmployeeAge age= new EmployeeAge();
+                        age.Age(29);
+                        age.PrintAge();
+                        Employee.Details();
+                        Employee.PrintCount();
+                        ReadOnlyDemo demo= new ReadOnlyDemo();
+                        demo.PrintValue();
+                        break;
+                        case 9:
                         flag = false;
                         break;
                 }
