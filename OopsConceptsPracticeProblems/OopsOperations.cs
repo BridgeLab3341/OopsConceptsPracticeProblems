@@ -228,4 +228,21 @@ namespace OopsConceptsPracticeProblems
             Console.WriteLine("Result: " + result);
         }
     }
+    public class TypesOfValue
+    {
+        public void DemoValueTypes()
+        {
+            int a = 10;  // value type
+            Console.WriteLine(a);
+            char b = 'A';  // value type
+            Console.WriteLine(b);
+            bool c = true;  // value type
+            Console.WriteLine(c);
+            string str1 = "Hello";  // reference type
+            string str2 = str1;  // both str1 and str2 refer to the same memory location
+            Console.WriteLine(str2);
+            int[] numbers1 = { 1, 2, 3 };  // reference type
+            int[] numbers2 = numbers1;  // both numbers1 and numbers2 refer to the same memory location
+        }
+    }
 }

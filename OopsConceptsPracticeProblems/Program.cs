@@ -8,7 +8,7 @@
             while (flag)
             {
                 Console.WriteLine("Choos Option To Perform\n1.Object and Class Example\n2.Single Inheritance\n3.Multi-Level Inheritance" +
-                    "\n4.Hierarchical Inheritance\n5.Polymorphism\n6.Encapsulation\n7.Abstraction\n8.Types of Variables\n9.Types of Methods\n10.Exit");
+                    "\n4.Hierarchical Inheritance\n5.Polymorphism\n6.Encapsulation\n7.Abstraction\n8.Types of Variables\n9.Types of Methods\n10.Value Types and Reference Types\n11.Exit");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -79,6 +79,10 @@
                         type.PrintResult(25);
                         break;
                         case 10:
+                        TypesOfValue typesOfValue= new TypesOfValue();
+                        typesOfValue.DemoValueTypes();
+                        break;
+                        case 11:
                         flag = false;
                         break;
                 }
